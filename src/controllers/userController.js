@@ -29,7 +29,7 @@ class UserController {
         httpOnly: true,
         secure: true,
         expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
-        SameSite: "None",
+        sameSite: "None",
       });
 
       return res.status(201).json({
@@ -58,7 +58,7 @@ class UserController {
         httpOnly: true,
         secure: true,
         expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
-        SameSite: "None",
+        sameSite: "None",
       });
 
       return res.status(200).json({
